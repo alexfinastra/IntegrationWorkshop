@@ -72,13 +72,75 @@
     <div class="jumbotron text-center">
         <div class="content">
             <div class="event-date">INTEGRATION TEAM PRESENTS</div>
-            <h1>GPP Integration Workshops</h1>
+            <h1>Integration Workshops</h1>
             <p class="lead">Schedule integration workshop at any convinient time with a list of productive sessions.</p>
-            <button type="button" class="btn btn-default btn-lg">STAY IN THE LOOP</button>
+            <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">SCHEDULE</button>
         </div>
     </div>
     <!-- .Jumbotron-->
 
+    <div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header" style="background-color: #353E56;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h3 class="modal-title" style="color: #FFF;">Schedulle Workshop</h3>
+		      </div>
+		      <div class="modal-body">
+		      	<form class="form-horizontal" action="/">						  
+						  <div class="form-group">
+						    <label class="control-label col-sm-3" for="client">Client Name</label>
+						    <div class="col-sm-9"> 
+						      <input type="client" class="form-control" id="usr">
+						    </div>
+						  </div>						  
+						  <div class="form-group">
+						    <label class="control-label col-sm-3" for="descr">Objective</label>
+						    <div class="col-sm-9"> 
+						      <textarea id="descr" class="form-control" rows="4" id="comment"></textarea>
+						    </div>
+						  </div>
+						  <div class="form-group">
+						  	<label class="control-label col-sm-3" for="fromdate">Starting from </label>						  	
+						  	<div class="col-sm-9">
+	                <div class="input-group date" id='fromdate'>
+	                    <input type='text' class="form-control" />
+	                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+	                    </span>
+	                </div> 
+                </div>               
+						  </div>
+						  <div class="form-group">
+							  <label class="control-label col-sm-3"  for="sel1">Format</label>
+							  <div class="col-sm-9">
+								  <select class="form-control" id="sel1">
+								    <option>ONE 1 day</option>
+								    <option>ONE 2 days</option>
+								    <option>ONE 3 days</option>
+								    <option>ONE 4 days</option>
+								    <option>ALL</option>
+								  </select>
+								</div>
+							</div>
+						  <div class="form-group">
+						    <label class="control-label col-sm-3" for="email">Contact email:</label>
+						    <div class="col-sm-9">
+						      <input type="email" class="form-control" id="email" placeholder="Enter email">
+						    </div>
+						  </div>
+						  <div class="form-group"> 
+						    <div class="col-sm-offset-3 col-sm-9">
+						      <button type="submit" class="btn btn-primary">Send request</button>
+						    </div>
+						  </div>
+						</form>		        
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
 
     <section id="section-intro" class="section-wrapper about-event">
         <div class="container">
@@ -91,11 +153,253 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p class="lead">
-                        We prepare a bank of 2-hour sessions, which cover all existing integration procedures (channels and interfaces setup, SOA services triggering, data mapping etc.). Each session splits into two steps a 30 min overview and 1.5 hour is a go thru the questioner. We are aiming to generate a proposed setup document (rules and profiles attributes), which could be test lately on clients environment.
+                    <p class="lead">                    		 
+                        We prepare a bank of 2-hour integration sessions/meetings. We use them as a building blocks, for a workshop agenda. All existing integration procedures (channels and interfaces setup, SOA services triggering, data mapping etc.) are presented in the bank. Each session splits into two steps: half hour functional overview and hour and a half questioner go thru. A questioneer hold basic behaviour as OOB configuration. The outcome of the questioneer is a integration setup document (basic rules and profile attributes), which could be used lateley as a reference setup. We also provide a two weeks support in order to finilize proposed setup(extention is optional) and bank of 24 hours production support.  
                     </p>                    
                 </div>                
             </div>
+        </div>
+         <div class="container">
+         		
+            <div class="row">
+               <div class="col-md-12">
+               		<div class="col-md-12">
+		         				<div class="section-title">
+		         					<h3>SCHEDULLED INTEGRATION SESSIONS</h3>
+		         				</div>
+		         			</div>
+               		<div class="cd-schedule loading">
+               			<div class="timeline">
+											<ul>
+												<li><span>09:00</span></li>
+												<li><span>09:30</span></li>
+												<li><span>10:00</span></li>
+												<li><span>10:30</span></li>
+												<li><span>11:00</span></li>
+												<li><span>11:30</span></li>
+												<li><span>12:00</span></li>
+												<li><span>12:30</span></li>
+												<li><span>13:00</span></li>
+												<li><span>13:30</span></li>
+												<li><span>14:00</span></li>
+												<li><span>14:30</span></li>
+												<li><span>15:00</span></li>
+												<li><span>15:30</span></li>
+												<li><span>16:00</span></li>
+												<li><span>16:30</span></li>
+												<li><span>17:00</span></li>
+												<li><span>17:30</span></li>
+												<li><span>18:00</span></li>
+											</ul>
+										</div> <!-- .timeline -->
+
+
+										<div class="events">
+											<ul>
+												<li class="events-group">
+													<div class="top-info"><span>Day 1</span></div>
+													<ul>
+														<li class="single-event" data-start="9:00" data-end="10:00" data-content="event-daily-recap" data-event="event-1">
+															<a href="#0">
+																<em class="event-name">Daily recap</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="10:00" data-end="12:00" data-content="event-itegration-basic" data-event="event-2">
+															<a href="#0">
+																<em class="event-name">Integration Technical</em>
+															</a>
+														</li>								
+
+														<li class="single-event" data-start="13:00" data-end="15:00"  data-content="event-yoga-1" data-event="event-2">
+															<a href="#0">
+																<em class="event-name">FNDT Message structure</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="15:00" data-end="17:00"  data-content="event-yoga-1" data-event="event-2">
+															<a href="#0">
+																<em class="event-name">Channels and Gateways</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="17:00" data-end="18:00" data-content="event-daily-wrapup" data-event="event-4">
+															<a href="#0">
+																<em class="event-name">Wrap up</em>
+															</a>
+														</li>
+													</ul>
+												</li>
+
+												<li class="events-group">
+													<div class="top-info"><span>Day 2</span></div>
+													<ul>
+														<li class="single-event" data-start="9:00" data-end="10:00" data-content="event-daily-recap" data-event="event-1">
+															<a href="#0">
+																<em class="event-name">Daily recap</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="10:00" data-end="12:00" data-content="event-rowing-workout" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Account look up</em>
+															</a>
+														</li>								
+
+														<li class="single-event" data-start="13:00" data-end="15:00"  data-content="event-yoga-1" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Balance Inquiry</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="15:00" data-end="17:00"  data-content="event-yoga-1" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Posting Interface</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="17:00" data-end="18:00" data-content="event-daily-wrapup" data-event="event-4">
+															<a href="#0">
+																<em class="event-name">Wrap up</em>
+															</a>
+														</li>
+													</ul>
+												</li>
+
+												<li class="events-group">
+													<div class="top-info"><span>Day 3</span></div>
+
+													<ul>
+														<li class="single-event" data-start="9:00" data-end="10:00" data-content="event-daily-recap" data-event="event-1">
+															<a href="#0">
+																<em class="event-name">Daily recap</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="10:00" data-end="12:00" data-content="event-rowing-workout" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Compliance</em>
+															</a>
+														</li>								
+
+														<li class="single-event" data-start="13:00" data-end="15:00"  data-content="event-yoga-1" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">FX Interface</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="15:00" data-end="17:00"  data-content="event-yoga-1" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Advices and notifications</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="17:00" data-end="18:00" data-content="event-daily-wrapup" data-event="event-4">
+															<a href="#0">
+																<em class="event-name">Wrap up</em>
+															</a>
+														</li>
+													</ul>
+												</li>
+
+												<li class="events-group">
+													<div class="top-info"><span>Day 4</span></div>
+
+													<ul>
+														<li class="single-event" data-start="9:00" data-end="10:00" data-content="event-daily-recap" data-event="event-1">
+															<a href="#0">
+																<em class="event-name">Daily recap</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="10:00" data-end="12:00" data-content="event-rowing-workout" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">SOA Services Intruduction</em>
+															</a>
+														</li>								
+
+														<li class="single-event" data-start="13:00" data-end="15:00"  data-content="event-yoga-1" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Queue List</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="15:00" data-end="17:00"  data-content="event-yoga-1" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Action on payments</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="17:00" data-end="18:00" data-content="event-daily-wrapup" data-event="event-4">
+															<a href="#0">
+																<em class="event-name">Wrap up</em>
+															</a>
+														</li>
+													</ul>
+												</li>
+
+												<li class="events-group">
+													<div class="top-info"><span>Day 5</span></div>
+
+													<ul>
+														<li class="single-event" data-start="9:00" data-end="10:00" data-content="event-daily-recap" data-event="event-1">
+															<a href="#0">
+																<em class="event-name">Daily recap</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="10:00" data-end="12:00" data-content="event-rowing-workout" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Static Data</em>
+															</a>
+														</li>								
+
+														<li class="single-event" data-start="13:00" data-end="15:00"  data-content="event-yoga-1" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Tasks</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="15:00" data-end="17:00"  data-content="event-yoga-1" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Maintenance and Logging</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="17:00" data-end="18:00" data-content="event-daily-wrapup" data-event="event-4">
+															<a href="#0">
+																<em class="event-name">Wrap up</em>
+															</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+
+
+										<div class="event-modal">
+											<header class="header">
+												<div class="content">
+													<span class="event-date"></span>
+													<h3 class="event-name"></h3>
+												</div>
+
+												<div class="header-bg"></div>
+											</header>
+
+											<div class="body">
+												<div class="event-info"></div>
+												<div class="body-bg"></div>
+											</div>
+
+											<a href="#0" class="close">Close</a>
+										</div>
+
+										<div class="cover-layer"></div>
+               		</div>
+               </div>
+            </div>
+
         </div>
     </section>
     <!-- .about-event -->
@@ -186,22 +490,30 @@
     </section>
     <!-- .team -->
 
+
+		<section id="section-ajenda" class="section-wrapper section-ajenda ">
+       
+
+    </section>
+
+
     <section id="section-pricing" class="section-wrapper pricing-section gray-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
                         <h1>SCHEDULE WORKSHOP</h1>
-                        <p>Select a number of workshop days</p>
+                        <p>A ONE options could be batched up to 4 days</p>
                     </div>
                 </div>
             </div>
             <div class="row">
+            		<div class="col-sm-2"></div>
                 <div class="col-sm-4">
                     <div class="pricing-table-default text-center">
                         <div class="pricing-head">
                             <h3>1 DAY</h3>
-                            <span class="price">SINGLE</span>
+                            <span class="price">ONE</span>
                         </div>
                         <div class="pricing-detail">
                             <ul class="pricing-list pink-i">
@@ -209,35 +521,41 @@
                                 <li>Single step fucntionality</li>
                                 <li>Single inteface full setup</li>
                                 <li>SOA services to automate interface operation</li>
+                                <li>CRD extract (interface tab)</li>
+                                <li>10 days of setup finalization </li>                                
+                                <li>25 hours of production support</li>
+                                <li>extensions upon request</li>
                             </ul>
                         </div>
-                        <a href="#section-ajenda" class="btn btn-primary">SCHEDULE</a>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">SCHEDULE</button>  
                     </div>
                     <!-- /.pricing-table-wrapper -->
                 </div>
-                <!-- .col-sm-4 -->
-
-                <div class="col-sm-4">
+                <!-- .col-sm-4 -->                
+                <div class="col-sm-5">
                     <div class="pricing-table-default text-center">
                         <div class="pricing-head">
-                            <h3>2 DAYS</h3>
-                            <span class="price">MINI</span>
+                            <h3>1 WEEK</h3>
+                            <span class="price">ALL</span>
                         </div>
                         <div class="pricing-detail">
                             <ul class="pricing-list pink-i">
-                                <li>4-6 sessions</li>
-                                <li>Multi steps process controll</li>
-                                <li>Up to 3 OOB intefaces setup</li>
-                                <li>SOA services to automate interfaces processing</li>
+                                <li>One week workshop sessions</li>
+                                <li>Full process control</li>
+                                <li>All OOB intefaces setup</li>
+                                <li>All SOA services are opened for interface automation</li>
+                                <li>CRD extract (interface tab)</li>
+                                <li>30 days of setup finalization</li>                                
+                                <li>80 hours of production support</li>
+                                <li>extensions upon request</li>
                             </ul>
                         </div>
-                        <a href="#section-ajenda" class="btn btn-primary">SCHEDULE</a>
-                    </div>
-                    <!-- /.pricing-table-wrapper -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">SCHEDULE</button>                        
+                    </div>                    
                 </div>
                 <!-- .col-sm-4 -->
-
-                <div class="col-sm-4">
+                <div class="col-sm-1"></div>
+                <!--div class="col-sm-4">
                     <div class="pricing-table-default text-center">
                         <div class="pricing-head">
                             <h3>3 DAYS</h3>
@@ -252,8 +570,7 @@
                             </ul>
                         </div>
                         <a href="#section-ajenda" class="btn btn-primary">SCHEDULE</a>
-                    </div>
-                    <!-- /.pricing-table-wrapper -->
+                    </div>                    
                 </div>
                 <!-- .col-sm-4 -->
             </div>
@@ -262,264 +579,6 @@
         <!-- /.container -->
     </section>
     <!-- .pricing-section -->
-
-		<section id="section-ajenda" class="section-wrapper section-ajenda ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                	 <div class="text-center">
-                        <div class="pricing-head">
-                            <h1 class="price">FULL WEEK AGENDA</h1>                            
-                        </div>
-                        <div class="pricing-detail">
-                        	<p>
-                        		<span>9-15 sessions, </span>
-                        		<span>ALL OOB intefaces setup, </span>
-                        		<span>ALL SOA services processing</span>
-                        	</p>                            
-                        </div>
-                        <a href="#section-ajenda" class="btn btn-primary">SCHEDULE</a>
-                    </div>                    
-                </div>
-            </div>
-
-            <div class="row">
-               <div class="col-md-12">
-               		<div class="cd-schedule loading">
-               			<div class="timeline">
-											<ul>
-												<li><span>09:00</span></li>
-												<li><span>09:30</span></li>
-												<li><span>10:00</span></li>
-												<li><span>10:30</span></li>
-												<li><span>11:00</span></li>
-												<li><span>11:30</span></li>
-												<li><span>12:00</span></li>
-												<li><span>12:30</span></li>
-												<li><span>13:00</span></li>
-												<li><span>13:30</span></li>
-												<li><span>14:00</span></li>
-												<li><span>14:30</span></li>
-												<li><span>15:00</span></li>
-												<li><span>15:30</span></li>
-												<li><span>16:00</span></li>
-												<li><span>16:30</span></li>
-												<li><span>17:00</span></li>
-												<li><span>17:30</span></li>
-												<li><span>18:00</span></li>
-											</ul>
-										</div> <!-- .timeline -->
-
-
-										<div class="events">
-											<ul>
-												<li class="events-group">
-													<div class="top-info"><span>Day 1</span></div>
-													<ul>
-														<li class="single-event" data-start="9:00" data-end="10:00" data-content="event-abs-circuit" data-event="event-1">
-															<a href="#0">
-																<em class="event-name">Introduction and objectives</em>
-															</a>
-														</li>
-
-														<li class="single-event" data-start="10:00" data-end="12:00" data-content="event-rowing-workout" data-event="event-2">
-															<a href="#0">
-																<em class="event-name">Integration - Basics</em>
-															</a>
-														</li>								
-
-														<li class="single-event" data-start="13:00" data-end="15:00"  data-content="event-yoga-1" data-event="event-2">
-															<a href="#0">
-																<em class="event-name">FNDT Message structure</em>
-															</a>
-														</li>
-
-														<li class="single-event" data-start="15:00" data-end="17:00"  data-content="event-yoga-1" data-event="event-2">
-															<a href="#0">
-																<em class="event-name">Channels and Gateways</em>
-															</a>
-														</li>
-
-														<li class="single-event" data-start="17:00" data-end="18:00" data-content="event-abs-circuit" data-event="event-4">
-															<a href="#0">
-																<em class="event-name">Wrap up</em>
-															</a>
-														</li>
-													</ul>
-												</li>
-
-												<li class="events-group">
-													<div class="top-info"><span>Day 2</span></div>
-													<ul>
-														<li class="single-event" data-start="9:00" data-end="10:00" data-content="event-abs-circuit" data-event="event-1">
-															<a href="#0">
-																<em class="event-name">Daily recap</em>
-															</a>
-														</li>
-
-														<li class="single-event" data-start="10:00" data-end="12:00" data-content="event-rowing-workout" data-event="event-3">
-															<a href="#0">
-																<em class="event-name">Account look up</em>
-															</a>
-														</li>								
-
-														<li class="single-event" data-start="13:00" data-end="15:00"  data-content="event-yoga-1" data-event="event-3">
-															<a href="#0">
-																<em class="event-name">Balance Inquiry</em>
-															</a>
-														</li>
-
-														<li class="single-event" data-start="15:00" data-end="17:00"  data-content="event-yoga-1" data-event="event-3">
-															<a href="#0">
-																<em class="event-name">Posting Interface</em>
-															</a>
-														</li>
-
-														<li class="single-event" data-start="17:00" data-end="18:00" data-content="event-abs-circuit" data-event="event-4">
-															<a href="#0">
-																<em class="event-name">Wrap up</em>
-															</a>
-														</li>
-													</ul>
-												</li>
-
-												<li class="events-group">
-													<div class="top-info"><span>Day 3</span></div>
-
-													<ul>
-														<li class="single-event" data-start="9:00" data-end="10:00" data-content="event-abs-circuit" data-event="event-1">
-															<a href="#0">
-																<em class="event-name">Daily recap</em>
-															</a>
-														</li>
-
-														<li class="single-event" data-start="10:00" data-end="12:00" data-content="event-rowing-workout" data-event="event-3">
-															<a href="#0">
-																<em class="event-name">Compliance</em>
-															</a>
-														</li>								
-
-														<li class="single-event" data-start="13:00" data-end="15:00"  data-content="event-yoga-1" data-event="event-3">
-															<a href="#0">
-																<em class="event-name">FX Interface</em>
-															</a>
-														</li>
-
-														<li class="single-event" data-start="15:00" data-end="17:00"  data-content="event-yoga-1" data-event="event-3">
-															<a href="#0">
-																<em class="event-name">Advices and notifications</em>
-															</a>
-														</li>
-
-														<li class="single-event" data-start="17:00" data-end="18:00" data-content="event-abs-circuit" data-event="event-4">
-															<a href="#0">
-																<em class="event-name">Wrap up</em>
-															</a>
-														</li>
-													</ul>
-												</li>
-
-												<li class="events-group">
-													<div class="top-info"><span>Day 4</span></div>
-
-													<ul>
-														<li class="single-event" data-start="9:00" data-end="10:00" data-content="event-abs-circuit" data-event="event-1">
-															<a href="#0">
-																<em class="event-name">Daily recap</em>
-															</a>
-														</li>
-
-														<li class="single-event" data-start="10:00" data-end="12:00" data-content="event-rowing-workout" data-event="event-3">
-															<a href="#0">
-																<em class="event-name">SOA Services Intruduction</em>
-															</a>
-														</li>								
-
-														<li class="single-event" data-start="13:00" data-end="15:00"  data-content="event-yoga-1" data-event="event-3">
-															<a href="#0">
-																<em class="event-name">Queue List</em>
-															</a>
-														</li>
-
-														<li class="single-event" data-start="15:00" data-end="17:00"  data-content="event-yoga-1" data-event="event-3">
-															<a href="#0">
-																<em class="event-name">Action on payments</em>
-															</a>
-														</li>
-
-														<li class="single-event" data-start="17:00" data-end="18:00" data-content="event-abs-circuit" data-event="event-4">
-															<a href="#0">
-																<em class="event-name">Wrap up</em>
-															</a>
-														</li>
-													</ul>
-												</li>
-
-												<li class="events-group">
-													<div class="top-info"><span>Day 5</span></div>
-
-													<ul>
-														<li class="single-event" data-start="9:00" data-end="10:00" data-content="event-abs-circuit" data-event="event-1">
-															<a href="#0">
-																<em class="event-name">Daily recap</em>
-															</a>
-														</li>
-
-														<li class="single-event" data-start="10:00" data-end="12:00" data-content="event-rowing-workout" data-event="event-3">
-															<a href="#0">
-																<em class="event-name">Static Data</em>
-															</a>
-														</li>								
-
-														<li class="single-event" data-start="13:00" data-end="15:00"  data-content="event-yoga-1" data-event="event-3">
-															<a href="#0">
-																<em class="event-name">Tasks</em>
-															</a>
-														</li>
-
-														<li class="single-event" data-start="15:00" data-end="17:00"  data-content="event-yoga-1" data-event="event-3">
-															<a href="#0">
-																<em class="event-name">Maintenance and Logging</em>
-															</a>
-														</li>
-
-														<li class="single-event" data-start="17:00" data-end="18:00" data-content="event-abs-circuit" data-event="event-4">
-															<a href="#0">
-																<em class="event-name">Wrap up</em>
-															</a>
-														</li>
-													</ul>
-												</li>
-											</ul>
-										</div>
-
-
-										<div class="event-modal">
-											<header class="header">
-												<div class="content">
-													<span class="event-date"></span>
-													<h3 class="event-name"></h3>
-												</div>
-
-												<div class="header-bg"></div>
-											</header>
-
-											<div class="body">
-												<div class="event-info"></div>
-												<div class="body-bg"></div>
-											</div>
-
-											<a href="#0" class="close">Close</a>
-										</div>
-
-										<div class="cover-layer"></div>
-               		</div>
-               </div>
-            </div>
-
-        </div>
-
-    </section>
 
 		
 
@@ -569,7 +628,6 @@
                     </div>
                 </div>
             </div>
-            <!-- /.row-->
 
             <div class="row">
             		<div class="col-md-6">
@@ -579,7 +637,6 @@
                     <div id="googleMapIndia" class="googleMap"></div>                    
                 </div>
             </div>
-            <!-- .row-->
 
             <div class="row">
                 <div class="col-md-12">
@@ -587,7 +644,7 @@
                         <h2>STAY INFORMED</h2>
                         <p>Don't miss a new session!</p>
                     </div>
-                    <form id="contactForm" class="subscribe-form form-inline" action="sendemail.php" method="POST">
+                    <form id="contactForm" class="subscribe-form form-inline" action="/" method="GET">
                         <div class="form-group">
                             <label for="emailTwo" class="sr-only">Email</label>
                             <input type="email" class="form-control input-lg" required="" id="emailTwo" name="email" placeholder="Enter your email address">
@@ -629,8 +686,8 @@
 <script src="js/jquery.easing.min.js"></script>
 
 <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMuilv2BD5NiOM6jAU0U9M0KjcEncXJcI&callback=initMap" type="text/javascript"></script>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+ <!--script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMuilv2BD5NiOM6jAU0U9M0KjcEncXJcI&callback=initMap" type="text/javascript"></script-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMuilv2BD5NiOM6jAU0U9M0KjcEncXJcI"></script>
 
 <!--<script src="js/one-page-nav.js"></script>-->
 <script src="js/scripts.js"></script>

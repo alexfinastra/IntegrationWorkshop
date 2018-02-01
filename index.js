@@ -15,12 +15,12 @@ app.use(express.static(__dirname + '/public'));
 
 //routes
 app.use('/*', function(req, res){	    
-  res.sendFile('./public/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 http
 	.createServer(app)
 	.listen(app.get('port'), function(){
-  		console.log('Bootcards demo app listening on port ' + app.get('port'));
+  		console.log('Integration Workshops server listening on port ' + app.get('port'));
 	}
 );

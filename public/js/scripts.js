@@ -56,14 +56,15 @@ jQuery(document).ready(function($){
     // Google Map
     // --------------------------------------------------------------------
 
+   
     (function () {
         if ($('#googleMapIsrael').length > 0) {
 
             //set your google maps parameters
             var $latitude  = 32.166616,  //If you unable to find latitude and longitude of your address. Please visit http://www.latlong.net/convert-address-to-lat-long.html you can easily generate.
                 $longitude = 34.813425,
-                $map_zoom  = 18;
-            /* ZOOM SETTING */
+                $map_zoom  = 8;
+            
 
             //google map custom marker icon
             var $marker_url = 'img/google-map-marker.png';
@@ -94,11 +95,11 @@ jQuery(document).ready(function($){
                 styles            : style,
             }
             //initialize the map
-            var map = new google.maps.Map(document.getElementById('googleMapIsrael'), map_options);
+            var map_israel = new google.maps.Map(document.getElementById('googleMapIsrael'), map_options);
             //add a custom marker to the map
             var marker = new google.maps.Marker({
                 position : new google.maps.LatLng($latitude, $longitude),
-                map      : map,
+                map      : map_israel,
                 visible  : true,
                 icon     : $marker_url
             });
@@ -108,9 +109,8 @@ jQuery(document).ready(function($){
             //set your google maps parameters
             var $latitude  = 18.523298,  //If you unable to find latitude and longitude of your address. Please visit http://www.latlong.net/convert-address-to-lat-long.html you can easily generate.
                 $longitude = 73.779711,
-                $map_zoom  = 18;
-            /* ZOOM SETTING */
-
+                $map_zoom  = 7;
+            
             //google map custom marker icon
             var $marker_url = 'img/google-map-marker.png';
 
@@ -128,7 +128,7 @@ jQuery(document).ready(function($){
             }];
 
             //set google map options
-            var map_options = {
+            var map_options_in = {
                 center            : new google.maps.LatLng($latitude, $longitude),
                 zoom              : $map_zoom,
                 panControl        : false,
@@ -140,18 +140,18 @@ jQuery(document).ready(function($){
                 styles            : style,
             }
             //initialize the map
-            var map = new google.maps.Map(document.getElementById('googleMapIndia'), map_options);
+            var map_india = new google.maps.Map(document.getElementById('googleMapIndia'), map_options_in);
             //add a custom marker to the map
-            var marker = new google.maps.Marker({
+            var marker_india = new google.maps.Marker({
                 position : new google.maps.LatLng($latitude, $longitude),
-                map      : map,
+                map      : map_india,
                 visible  : true,
                 icon     : $marker_url
             });
         }
         
     }());
-
+   
     var transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
     var transitionsSupported = ( $('.csstransitions').length > 0 );
     //if browser does not support transitions - use a different event to trigger them
