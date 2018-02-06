@@ -269,12 +269,12 @@ jQuery(document).ready(function($){
         this.modal.attr('data-event', event.parent().attr('data-event'));
 
         //update event content
-        this.modalBody.find('.event-info').load(event.parent().attr('data-content')+'.html .event-info > *', function(data){
+        this.modalBody.find('.event-info').load("sessions/" + event.parent().attr('data-content')+'.html .event-info > *', function(data){
             //once the event content has been loaded
             self.element.addClass('content-loaded');
         });
 
-        this.element.addClass('modal-is-open');
+        this.element.addClass('modal-is-open');        
 
         setTimeout(function(){
             //fixes a flash when an event is selected - desktop version only
@@ -342,8 +342,8 @@ jQuery(document).ready(function($){
                 self.animating = false;
                 self.element.addClass('animation-completed');
             });
-        }
-
+        }        
+       
         //if browser do not support transitions -> no need to wait for the end of it
         if( !transitionsSupported ) self.modal.add(self.modalHeaderBg).trigger(transitionEnd);
     };
@@ -531,4 +531,6 @@ jQuery(document).ready(function($){
             'transform': value
         });
     }
+
+    
 }); // JQuery end
