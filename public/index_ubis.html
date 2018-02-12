@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Finastra - Integration Services Team</title>
+
+    <!-- favicon -->
+    <link href="img/favicon.jpg" rel=icon>
+
+    <!-- web-fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/styleschedule.css" rel="stylesheet">
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+<div id="main-wrapper">
+    <!-- Page Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="status-mes"></div>
+        </div>
+    </div>
+
+    <header class="header">
+        <!-- Navigation -->
+        <nav class="navbar main-menu" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll logo" href="#page-top"><img src="img/rsz_logit.png" alt=""></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden"><a href="#page-top"></a></li>
+                        <li><a class="page-scroll" href="#section-intro">Sessions</a></li>                        
+                        <li><a class="page-scroll" href="#section-pricing">Workshop</a></li>
+                        <li><a class="page-scroll" href="#section-venue">Team</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- .nav -->
+
+    </header>
+
+    <div class="jumbotron text-center">
+        <div class="content">
+            <div class="event-date">FEBRUARY 29 - MARCH 1, 2018, PRAGUE</div>
+            <h1>Integration Workshops</h1>
+            <p class="lead">Discovery service as a prt of risk minimization and increasing certainity of size and cost </p>
+            <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">SCHEDULE</button>
+        </div>
+    </div>
+    <!-- .Jumbotron-->
+
+    <div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header" style="background-color: #353E56;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h3 class="modal-title" style="color: #FFF;">Schedulle Workshop</h3>
+		      </div>
+		      <div class="modal-body">
+		      	<form class="form-horizontal" action="/schedule" method="post">						  
+						  <div class="form-group">
+						    <label class="control-label col-sm-3" for="name">Your name</label>
+						    <div class="col-sm-9"> 
+						      <input type="text" class="form-control" id="name" name="name">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label class="control-label col-sm-3" for="company">organization</label>
+						    <div class="col-sm-9">
+						      <input type="text" class="form-control" id="company" placeholder="" name="company">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label class="control-label col-sm-3" for="email">email</label>
+						    <div class="col-sm-9">
+						      <input type="email" class="form-control" id="email" placeholder="" name="email">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label class="control-label col-sm-3" for="phone">phone</label>
+						    <div class="col-sm-9">
+						      <input type="text" class="form-control" id="phone" placeholder="" name="phone">
+						    </div>
+						  </div>						  
+						  <div class="form-group">
+						    <label class="control-label col-sm-3" for="notes">notes</label>
+						    <div class="col-sm-9"> 
+						      <textarea class="form-control" rows="2" id="notes" name="notes"></textarea>
+						    </div>
+						  </div>						  
+						  <div class="form-group"> 
+						    <div class="col-sm-offset-3 col-sm-9">
+						      <button type="submit" class="btn btn-primary">Send request</button>
+						    </div>
+						  </div>
+						</form>		        
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+
+    <section id="section-intro" class="section-wrapper about-event">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>INTEGRATION SESSION</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="lead">                    		 
+                        We prepare a bank of 2-hour integration sessions/meetings. We use them as a building blocks, for a workshop agenda. All existing integration procedures (channels and interfaces setup, SOA services triggering, data mapping etc.) are presented in the bank. Each session splits into two steps: half hour functional overview and hour and a half questioner go thru. A questioneer hold basic behaviour as OOB configuration. The outcome of the questioneer is a integration setup document (basic rules and profile attributes), which could be used lateley as a reference setup. We also provide a two weeks support in order to finilize proposed setup(extention is optional) and bank of 24 hours production support.  
+                    </p>                    
+                </div>                
+            </div>
+        </div>
+         <div class="container">
+         		
+            <div class="row">
+               <div class="col-md-12">
+               		<div class="col-md-12">
+		         				<div class="section-title">
+		         					<h3>SCHEDULLED INTEGRATION SESSIONS</h3>
+		         				</div>
+		         			</div>
+               		<div class="cd-schedule loading">
+               			<div class="timeline">
+											<ul>
+												<li><span>09:00</span></li>
+												<li><span>09:30</span></li>
+												<li><span>10:00</span></li>
+												<li><span>10:30</span></li>
+												<li><span>11:00</span></li>
+												<li><span>11:30</span></li>
+												<li><span>12:00</span></li>
+												<li><span>12:30</span></li>
+												<li><span>13:00</span></li>
+												<li><span>13:30</span></li>
+												<li><span>14:00</span></li>
+												<li><span>14:30</span></li>
+												<li><span>15:00</span></li>
+												<li><span>15:30</span></li>
+												<li><span>16:00</span></li>
+												<li><span>16:30</span></li>
+												<li><span>17:00</span></li>
+												<li><span>17:30</span></li>
+												<li><span>18:00</span></li>
+											</ul>
+										</div> <!-- .timeline -->
+
+
+										<div class="events">
+											<ul>
+												<li class="events-group">
+													<div class="top-info"><span>Day 1</span></div>
+													<ul>
+														<li class="single-event" data-start="9:00" data-end="10:00" data-content="event-daily-recap" data-event="event-1">
+															<a href="#0">
+																<em class="event-name">Daily recap</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="10:00" data-end="12:00" data-content="event-itegration-basic" data-event="event-2">
+															<a href="#0">
+																<em class="event-name">Integration Technical</em>
+															</a>
+														</li>								
+
+														<li class="single-event" data-start="12:00" data-end="14:00"  data-content="event-fndt-message" data-event="event-2">
+															<a href="#0">
+																<em class="event-name">FNDT Message structure</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="14:00" data-end="16:00"  data-content="event-channels-gateways" data-event="event-2">
+															<a href="#0">
+																<em class="event-name">Channels and Gateways</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="16:00" data-end="17:00" data-content="event-daily-wrapup" data-event="event-4">
+															<a href="#0">
+																<em class="event-name">Wrap up</em>
+															</a>
+														</li>
+													</ul>
+												</li>
+
+												<li class="events-group">
+													<div class="top-info"><span>Day 2</span></div>
+													<ul>
+														<li class="single-event" data-start="9:00" data-end="10:00" data-content="event-daily-recap" data-event="event-1">
+															<a href="#0">
+																<em class="event-name">Daily recap</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="10:00" data-end="12:00" data-content="event-account-lookup" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Account lookup</em>
+															</a>
+														</li>								
+
+														<li class="single-event" data-start="12:00" data-end="14:00"  data-content="event-balance-inquiry" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Balance Inquiry</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="14:00" data-end="16:00"  data-content="event-posting" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Posting Interface</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="16:00" data-end="17:00" data-content="event-daily-wrapup" data-event="event-4">
+															<a href="#0">
+																<em class="event-name">Wrap up</em>
+															</a>
+														</li>
+													</ul>
+												</li>
+
+												<li class="events-group">
+													<div class="top-info"><span>Day 3</span></div>
+
+													<ul>
+														<li class="single-event" data-start="9:00" data-end="10:00" data-content="event-daily-recap" data-event="event-1">
+															<a href="#0">
+																<em class="event-name">Daily recap</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="10:00" data-end="12:00" data-content="event-compliance" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Compliance</em>
+															</a>
+														</li>								
+
+														<li class="single-event" data-start="12:00" data-end="14:00"  data-content="event-fx" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">FX Interface</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="14:00" data-end="16:00"  data-content="event-advices" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Advices and notifications</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="16:00" data-end="17:00" data-content="event-daily-wrapup" data-event="event-4">
+															<a href="#0">
+																<em class="event-name">Wrap up</em>
+															</a>
+														</li>
+													</ul>
+												</li>
+
+												<li class="events-group">
+													<div class="top-info"><span>Day 4</span></div>
+
+													<ul>
+														<li class="single-event" data-start="9:00" data-end="10:00" data-content="event-daily-recap" data-event="event-1">
+															<a href="#0">
+																<em class="event-name">Daily recap</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="10:00" data-end="12:00" data-content="event-soa-services" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">SOA Services Intruduction</em>
+															</a>
+														</li>								
+
+														<li class="single-event" data-start="12:00" data-end="14:00"  data-content="event-soa-queuelist" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Queue List</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="14:00" data-end="16:00"  data-content="event-soa-actiononpayments" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Action on payments</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="16:00" data-end="17:00" data-content="event-daily-wrapup" data-event="event-4">
+															<a href="#0">
+																<em class="event-name">Wrap up</em>
+															</a>
+														</li>
+													</ul>
+												</li>
+
+												<li class="events-group">
+													<div class="top-info"><span>Day 5</span></div>
+
+													<ul>
+														<li class="single-event" data-start="9:00" data-end="10:00" data-content="event-daily-recap" data-event="event-1">
+															<a href="#0">
+																<em class="event-name">Daily recap</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="10:00" data-end="12:00" data-content="event-soa-staticdata" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Static Data</em>
+															</a>
+														</li>								
+
+														<li class="single-event" data-start="12:00" data-end="14:00"  data-content="event-soa-tasks" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Tasks</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="14:00" data-end="16:00"  data-content="event-soa-maintenance" data-event="event-3">
+															<a href="#0">
+																<em class="event-name">Maintenance and Logging</em>
+															</a>
+														</li>
+
+														<li class="single-event" data-start="16:00" data-end="17:00" data-content="event-daily-wrapup" data-event="event-4">
+															<a href="#0">
+																<em class="event-name">Wrap up</em>
+															</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+
+
+										<div class="event-modal">
+											<header class="header">
+												<div class="content">
+													<span class="event-date"></span>
+													<h3 class="event-name"></h3>
+												</div>
+
+												<div class="header-bg"></div>
+											</header>
+
+											<div class="body">
+												<div class="event-info"></div>
+												<div class="body-bg"></div>
+											</div>
+
+											<a href="#0" class="close">Close</a>
+										</div>
+
+										<div class="cover-layer"></div>
+               		</div>
+               </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- .about-event -->
+    
+    <!--section id="section-speaker" class="section-wrapper team gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>TEAM</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="#"><img src="img/manager.png" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Alex Perman
+                                <small></small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+
+                <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="#"><img src="img/integrator.png" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Aviad Pilo
+                                <small></small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+
+                <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="#"><img src="img/integrator.png" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Rajesh Badiye
+                                <small></small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+
+                <div class="col-sm-6 col-md-3">
+                    <figure class="thumbnail">
+                        <a href="#"><img src="img/integrator.png" class="img-responsive" alt="Image"></a>
+                        <figcaption class="caption text-center">
+                            <h3>Arnab Podder
+                                <small></small>
+                            </h3>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>                       
+        </div>
+    </section>
+    <!-- .team -->
+
+    <section id="section-pricing" class="section-wrapper pricing-section gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>SCHEDULE WORKSHOP</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            		<div class="col-sm-2"></div>
+                <div class="col-sm-4">
+                    <div class="pricing-table-default text-center">
+                        <div class="pricing-head">
+                            <h3>payments integration</h3>
+                            <span class="price">BASIC</span>
+                        </div>
+                        <div class="pricing-detail">
+                            <ul class="pricing-list pink-i">
+                            		<li>1 day (1-3 sessions) workshop</li>
+                                <li>Single step fucntionality</li>
+                                <li>Single inteface full setup</li>
+                                <li>SOA services to automate interface operation</li>
+                                <li>CRD extract (interface tab)</li>
+                                <li>10 days of setup finalization </li>                                
+                                <li>25 hours of production support</li>
+                                <li>extensions upon request</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">SCHEDULE</button>  
+                    </div>
+                    <!-- /.pricing-table-wrapper -->
+                </div>
+                <!-- .col-sm-4 -->                
+                <div class="col-sm-5">
+                    <div class="pricing-table-default text-center">
+                        <div class="pricing-head">
+                            <h3>payments integration</h3>
+                            <span class="price">PREMIUM</span>
+                        </div>
+                        <div class="pricing-detail">
+                            <ul class="pricing-list pink-i">
+                                <li>1 full week workshop sessions</li>
+                                <li>Full process control</li>
+                                <li>All OOB intefaces setup</li>
+                                <li>All SOA services are opened for interface automation</li>
+                                <li>CRD extract (interface tab)</li>
+                                <li>30 days of setup finalization</li>                                
+                                <li>80 hours of production support</li>
+                                <li>extensions upon request</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">SCHEDULE</button>                        
+                    </div>                    
+                </div>
+                <!-- .col-sm-4 -->
+                <div class="col-sm-1"></div>
+                <!--div class="col-sm-4">
+                    <div class="pricing-table-default text-center">
+                        <div class="pricing-head">
+                            <h3>3 DAYS</h3>
+                            <span class="price">MAXI</span>
+                        </div>
+                        <div class="pricing-detail">
+                            <ul class="pricing-list pink-i">
+                                <li>7-9 sessions</li>
+                                <li>Full process control</li>
+                                <li>5 OOB intefaces setup</li>
+                                <li>SOA services to automate message processing</li>
+                            </ul>
+                        </div>
+                        <a href="#section-ajenda" class="btn btn-primary">SCHEDULE</a>
+                    </div>                    
+                </div>
+                <!-- .col-sm-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- .pricing-section -->
+
+		
+
+
+    <!--section id="section-partner" class="section-wrapper client-logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>PARTNERS</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
+                    <a href="#"><img src="img/logo-client-1.jpg" alt="Image"></a>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
+                    <a href="#"><img src="img/logo-client-2.jpg" alt="Image"></a>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
+                    <a href="#"><img src="img/logo-client-3.jpg" alt="Image"></a>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
+                    <a href="#"><img src="img/logo-client-4.jpg" alt="Image"></a>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
+                    <a href="#"><img src="img/logo-client-5.jpg" alt="Image"></a>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
+                    <a href="#"><img src="img/logo-client-6.jpg" alt="Image"></a>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <!-- .client-logo -->
+
+
+    <section id="section-venue" class="section-wrapper  gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>THE TEAM</h1>
+
+                        <p>We are talented and experienced team locating in Israel and India. With a great pleasure, we will share our knowledge and experience. We are target oriented, we know how to short the procedures and get faster to the desired results.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+            		<div class="col-md-6">
+                    <div id="googleMapIsrael" class="googleMap"></div>                    
+                </div>
+                <div class="col-md-6">
+                    <div id="googleMapIndia" class="googleMap"></div>                    
+                </div>
+            </div>
+
+            <!--div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2>STAY INFORMED</h2>
+                        <p>Don't miss a new session!</p>
+                    </div>
+                    <form id="contactForm" class="subscribe-form form-inline" action="/" method="GET">
+                        <div class="form-group">
+                            <label for="emailTwo" class="sr-only">Email</label>
+                            <input type="email" class="form-control input-lg" required="" id="emailTwo" name="email" placeholder="Enter your email address">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div-->
+
+        </div>
+    </section>
+    <!-- contact-section -->
+
+
+    <footer class="footer">
+        <div class="copyright-section">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="copytext text-center">&copy; Conference. All rights reserved | Design By: <a href="https://uicookies.com">uiCookies</a></div>
+                </div>
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- .copyright-section -->
+    </footer>
+    <!-- .footer -->
+
+</div>
+<!-- #main-wrapper -->
+
+
+<!-- jquery -->
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+ <!--script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMuilv2BD5NiOM6jAU0U9M0KjcEncXJcI&callback=initMap" type="text/javascript"></script-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMuilv2BD5NiOM6jAU0U9M0KjcEncXJcI"></script>
+
+<!--<script src="js/one-page-nav.js"></script>-->
+<script src="js/scripts.js"></script>
+</body>
+</html>
