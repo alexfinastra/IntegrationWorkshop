@@ -360,6 +360,11 @@ button:focus,
     overflow              : hidden;
     }
 
+.paris {
+    background            : url("../img/paris.jpeg");
+    background-size       : cover;
+    }
+
 .jumbotron .content {
     color             : #ffffff;
     position          : absolute;
