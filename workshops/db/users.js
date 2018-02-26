@@ -1,6 +1,6 @@
 var records = [
     { id: 1, username: 'alex', password: '1', displayName: 'Alex', emails: [ { value: 'alexander.perman@finastra.com' } ], workshopIndex: 'gpp_integration _workshop_ca_cib_5_8_march_ 2018' }
-    { id: 1, username: 'arnab', password: '1', displayName: 'Alex', emails: [ { value: 'alexander.perman@finastra.com' } ], workshopIndex: 'gpp_integration _workshop_ca_cib_5_8_march_ 2018' }
+   , { id: 1, username: 'arnab', password: '1', displayName: 'Alex', emails: [ { value: 'alexander.perman@finastra.com' } ], workshopIndex: 'gpp_integration _workshop_ca_cib_5_8_march_ 2018' }
   , { id: 2, username: 'admin', password: 'admin', displayName: 'Jill', emails: [ { value: 'jill@example.com' } ], workshopIndex: 'gpp_integration _workshop'  }
 ];
 
