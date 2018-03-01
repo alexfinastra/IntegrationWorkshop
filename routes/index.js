@@ -33,7 +33,7 @@ router.get('/workshops/:name', function (req, res, next) {
 router.post('/login', 
 		passport.authenticate('local', { failureRedirect: '/' }), 
 		function(req, res) {  	
-    console.log(" ++++ Authenticated +++ " + req.user)
+    console.log(" ++++ Authenticated +++ " + JSON.stringify(req.body))
     res.redirect("/workshops/" + req.user["workshopIndex"]);
 });
 
