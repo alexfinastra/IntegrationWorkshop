@@ -1,7 +1,7 @@
 <FndtMsg>
     <Header>
-        <contextName>DebitAccountLookup</contextName>
-        <contextLocalName>DRACCLOOK</contextLocalName>
+        <contextName>CreditAccountLookup</contextName>
+        <contextLocalName>CRACCLOOK</contextLocalName>
         <credentials>
             <UserID>String</UserID>
             <Role>String</Role>
@@ -17,11 +17,11 @@
         <Pmnt> … </Pmnt>
         <Extn>
             <ProcessingPersistentInfo>
-                <DebitSide>
-                    <P_DBT_ACCT_NB>123456789</P_DBT_ACCT_NB>
-                    <P_DBT_ACCT_CCY>GBP</P_DBT_ACCT_CCY>
-                    <P_DBT_ACCT_OFFICE>XX1</P_DBT_ACCT_OFFICE>
-                </DebitSide>
+                <CreditSide>
+                    <P_CDT_ACCT_NB>987654321</P_CDT_ACCT_NB>
+                    <P_CDT_ACCT_CCY>USD</P_CDT_ACCT_CCY>
+                    <P_CDT_ACCT_OFFICE>XX1</P_CDT_ACCT_OFFICE>
+                </CreditSide>
             </ProcessingPersistentInfo>
         </Extn>
     </Msg>

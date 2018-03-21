@@ -67,7 +67,7 @@ Main Components
     left: 0;
     height: 100%;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 65px;
   }
   .cd-schedule .timeline li {
     position: relative;
@@ -102,7 +102,7 @@ Main Components
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  .cd-schedule .timeline li:nth-of-type(2n) span {
+  .cd-schedule .timeline li:nth-of-type(2n+1) span {
     display: none;
   }
 }
