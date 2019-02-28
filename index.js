@@ -53,9 +53,6 @@ passport.deserializeUser(function(id, cb) {
   });
 });
 
-
-
-
 http
 	.createServer(app)
 	.listen(app.get('port'), function(){

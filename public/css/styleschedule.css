@@ -377,7 +377,7 @@ Main Components
   width: 100%;
   /* 70px is the .header height */
   height: calc(100% - 70px);
-  top: 20px;
+  /*top: 20px;*/
 }
 
 .cd-schedule .event-modal .event-info {

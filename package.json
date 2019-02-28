@@ -4,7 +4,7 @@
   "homepage": "https://finastra-central.herokuapp.com/",
   "private": true,
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
