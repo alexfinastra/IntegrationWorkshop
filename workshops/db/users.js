@@ -1,7 +1,7 @@
 var records = [
     { id: 1, username: 'alex', password: '1', displayName: 'Alex', emails: [ { value: 'alexander.perman@finastra.com' } ], workshopIndex: 'gpp_integration _workshop' }
-   , { id: 1, username: 'arnab', password: '1', displayName: 'Arnab', emails: [ { value: 'arnab.podder@finastra.com' } ], workshopIndex: 'gpp_integration _workshop' }
-  , { id: 2, username: 'admin', password: 'admin', displayName: 'Admin', emails: [ { value: 'jill@example.com' } ], workshopIndex: 'gpp_integration _workshop'  }
+   ,{ id: 2, username: 'rajesh', password: '1', displayName: 'Rajesh', emails: [ { value: 'arnab.podder@finastra.com' } ], workshopIndex: 'gpp_integration _workshop' }
+   ,{ id: 3, username: 'admin', password: 'admin', displayName: 'Admin', emails: [ { value: 'jill@example.com' } ], workshopIndex: 'gpp_integration _workshop'  }
 ];
 
 exports.findById = function(id, cb) {
