@@ -1,1 +1,0 @@
-delete from msg_types where UID_MSG_TYPES = 'SWIFT_110^^Message';
